@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="400" maxWidth="600" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sujey.instituto.Controllers.AppController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Images/Diseño.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="315.0" layoutY="14.0" prefHeight="372.0" prefWidth="253.0" style="-fx-border-radius: 30; -fx-border-color: white; -fx-border-width: 5;">
+         <children>
+            <TextField fx:id="nombreUsuario" layoutX="38.0" layoutY="114.0" promptText="Ingresa tu usuario">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="26.0" fitWidth="17.0" layoutX="191.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Proyecto-Mangos/src/main/resources/com/sujey/images/usuario.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="contraseñaUsuario" layoutX="39.0" layoutY="186.0" prefHeight="26.0" prefWidth="175.0" promptText="Ingresa tu contraseña" />
+            <ImageView fitHeight="26.0" fitWidth="17.0" layoutX="193.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Proyecto-Mangos/src/main/resources/com/sujey/images/ojo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ingresarUsuario" layoutX="127.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedIngresarUsuario" prefHeight="37.0" prefWidth="102.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Ingresar" textFill="#eeecec">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="offWindow" layoutX="27.0" layoutY="261.0" mnemonicParsing="false" onMouseClicked="#OnMouseClickedoffWindow" prefHeight="37.0" prefWidth="87.0" style="-fx-background-color: red; -fx-background-radius: 8;" text="Salir" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="27.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/BienvenidoHome.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
